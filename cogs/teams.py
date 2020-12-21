@@ -29,6 +29,10 @@ class Basic(commands.Cog):
     async def GHOAT(self, ctx):
         await ctx.send("GHOAT: The Greatest Host Of All Time. You know who. 👑")
 
+    @commands.command(description="Need I say who?", brief=">:)")
+    async def GCHOAT(self, ctx):
+        await ctx.send("GCHOAT: The Greatest Co-Host Of All Time. You know who. 🤪")
+
 
 def setup(bot):
     bot.add_cog(Basic(bot))
